@@ -181,6 +181,97 @@ h3 {
   box-shadow: 0 24px 70px rgb(0 0 0 / 8%);
 }
 
+.detail-frame {
+  aspect-ratio: 4 / 3;
+}
+
+.detail-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edit-frame img {
+  transform: scale(1.46);
+}
+
+.integration-visual {
+  min-height: 390px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(180px, 0.8fr);
+  align-items: center;
+  gap: clamp(18px, 3vw, 34px);
+  padding: clamp(28px, 5vw, 54px);
+  border: 1px solid var(--line);
+  background: var(--soft);
+  box-shadow: 0 24px 70px rgb(0 0 0 / 8%);
+}
+
+.integration-sources {
+  display: grid;
+  gap: 12px;
+}
+
+.integration-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.integration-card p,
+.integration-result p {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.integration-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.google-icon {
+  color: #8be7cf;
+}
+
+.integration-arrow {
+  color: var(--muted);
+  font-size: 1.6rem;
+}
+
+.integration-result {
+  padding: 24px;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.integration-result > span {
+  display: block;
+  margin-bottom: 38px;
+  color: #8be7cf;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+}
+
+.integration-result strong {
+  display: block;
+  font-size: 1.15rem;
+}
+
+.integration-result p {
+  color: #bdbdbd;
+}
+
 .hero-frame {
   margin-top: clamp(62px, 9vw, 112px);
 }
@@ -321,6 +412,16 @@ h3 {
 
   .steps span {
     margin-bottom: 38px;
+  }
+
+  .integration-visual {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .integration-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
   }
 
   .split-reverse .section-copy {
