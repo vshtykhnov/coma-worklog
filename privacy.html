@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — COMA</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+      }
+      body {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 24px;
+        line-height: 1.65;
+      }
+      h1 {
+        line-height: 1.2;
+      }
+      h2 {
+        margin-top: 28px;
+        font-size: 1.15rem;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 3px;
+      }
+      .date {
+        opacity: 0.65;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="./">← COMA</a></p>
+      <h1>Privacy Policy</h1>
+      <p class="date">COMA — Worklog for Jira · Last updated: September 16, 2026</p>
+      <p>
+        COMA helps you prepare and post Jira worklogs. This policy covers the Chrome extension,
+        maintained by vshtykhnov.
+      </p>
+
+      <h2>Data COMA uses</h2>
+      <ul>
+        <li>
+          <strong>Jira:</strong> your site address, account ID and display name; issue details,
+          statuses, assignment and status history; and worklog dates, durations and descriptions.
+          COMA uses your existing signed-in Jira session. It does not ask for or store your Jira
+          password.
+        </li>
+        <li>
+          <strong>Google Calendar, if connected:</strong> your account identifier and email,
+          calendar names and identifiers, and selected-calendar events, including titles, times and
+          your attendance response. These are used to suggest meeting worklogs and remember your
+          calendar selection. Calendar access is read-only.
+        </li>
+        <li>
+          <strong>GitHub, if connected:</strong> your account identifier and username, pull request
+          identifiers, titles and links, and submitted review details and dates. These are used to
+          suggest code-review worklogs. COMA stores the access token you authorize or enter and, for
+          GitHub App authorization, refresh tokens and expiry information. COMA does not modify your
+          repositories or pull requests.
+        </li>
+        <li>
+          <strong>Your entries and preferences:</strong> worklog drafts, posting results, working
+          hours, task mappings, integration selections and other app settings.
+        </li>
+      </ul>
+
+      <h2>Storage and transfers</h2>
+      <p>
+        Workspace data, settings and GitHub credentials are stored locally in your Chrome profile
+        using extension storage. Temporary authorization and meeting-preparation data use session
+        storage. Google authorization tokens are managed through Chrome's identity API. COMA does
+        not provide cross-device synchronization or application-level encryption of local storage.
+      </p>
+      <p>
+        COMA requests data directly from your Jira site, Google and GitHub over HTTPS when you use
+        their features. When you post worklogs, their dates, durations and descriptions are sent to
+        your Jira site. Descriptions can include meeting titles or pull request titles and links.
+        Suggestions remain local drafts until you post them. Editing or deleting an existing Jira
+        worklog sends the corresponding update or deletion to Jira.
+      </p>
+      <p>
+        COMA has no application backend receiving your workspace data, and includes no analytics,
+        advertising or browsing-history tracking. We do not sell your data, use it for advertising,
+        or send it to AI services for model training. Connected providers process requests under
+        their own policies and your organization's settings.
+      </p>
+
+      <h2>Google API data</h2>
+      <p>
+        COMA's use and transfer of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy"
+          >Google API Services User Data Policy</a
+        >, including its Limited Use requirements. Google data is used only for the meeting-worklog
+        features you choose. The maintainer does not receive or read your calendar data through
+        COMA.
+      </p>
+
+      <h2>Feedback</h2>
+      <p>
+        Feedback opens an optional external
+        <a href="https://tally.so/r/yPBag4">Tally form</a>. Information you submit is shared with
+        Tally and the COMA maintainer to handle your report, improve the app and reply if you
+        provide contact details. COMA does not automatically attach account or workspace data. Only
+        share information needed for your report; avoid passwords, tokens and confidential work
+        data. Tally's handling of its service is described in its
+        <a href="https://tally.so/help/privacy-policy">Privacy Policy</a>.
+      </p>
+
+      <h2>Retention and your controls</h2>
+      <p>
+        Local workspace data remains until you clear the extension's storage or uninstall COMA.
+        Disconnecting Jira does not erase saved workspaces. Disconnecting Google or GitHub removes
+        the active local connection, but saved drafts, task mappings and calendar preferences may
+        remain. Disconnecting is not the same as revoking provider authorization: you can revoke
+        COMA in your Google or GitHub account settings, and revoke a personal access token in
+        GitHub.
+      </p>
+      <p>
+        Clearing local data does not delete worklogs already posted to Jira or feedback submitted
+        through Tally. Manage posted worklogs in Jira or through COMA's worklog controls. Feedback
+        is retained for as long as needed to handle the report and follow-up; you can request
+        access, correction or deletion through the contact below.
+      </p>
+
+      <h2>Contact and changes</h2>
+      <p>
+        For privacy questions or requests, contact the COMA maintainer through
+        <a href="https://tally.so/r/yPBag4">the feedback form</a> and include a way to reply.
+        Changes to this policy will appear on this page with an updated date.
+      </p>
+    </main>
+  </body>
+</html>
