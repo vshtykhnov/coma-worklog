@@ -143,7 +143,7 @@ h3 {
 }
 
 .hero {
-  padding-top: clamp(76px, 11vw, 150px);
+  padding-top: clamp(56px, 7vw, 100px);
 }
 
 .hero-copy {
@@ -192,12 +192,50 @@ h3 {
   object-fit: cover;
 }
 
-.edit-frame img {
-  transform: scale(1.46);
+.task-time-frame {
+  aspect-ratio: 17 / 16;
 }
 
 .hero-frame {
-  margin-top: clamp(62px, 9vw, 112px);
+  margin-top: clamp(42px, 5vw, 72px);
+}
+
+.demo {
+  margin-inline: 0;
+}
+
+.video-frame {
+  position: relative;
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--soft);
+}
+
+.selection-video-frame video {
+  aspect-ratio: 53 / 36;
+}
+
+.video-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  min-width: 55px;
+  padding: 6px 10px;
+  border: 1px solid #fff;
+  background: #171717;
+  color: #fff;
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.video-toggle:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 3px;
 }
 
 .section {
