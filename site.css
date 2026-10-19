@@ -192,10 +192,6 @@ h3 {
   object-fit: cover;
 }
 
-.task-time-frame {
-  aspect-ratio: 17 / 16;
-}
-
 .hero-frame {
   margin-top: clamp(42px, 5vw, 72px);
 }
@@ -246,7 +242,7 @@ h3 {
 .steps,
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   margin-top: 58px;
   background: var(--line);
