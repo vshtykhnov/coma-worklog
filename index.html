@@ -10,7 +10,7 @@
     />
     <link rel="canonical" href="https://snaplog.link/" />
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="site.css?v=7" />
+    <link rel="stylesheet" href="site.css?v=8" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Snaplog for Jira" />
     <meta property="og:description" content="Log your Jira time in seconds, not minutes." />
@@ -158,23 +158,25 @@
         </div>
       </section>
 
-      <section class="section split split-reverse page-width">
-        <div class="section-copy">
-          <p class="eyebrow">Optional context</p>
-          <h2>Meetings and reviews can count too.</h2>
-          <p>
-            Connect Google Calendar or Outlook for meetings and GitHub for code reviews. On pull
-            request pages Snaplog counts your active review time, so review worklogs match the time
-            you actually spent.
-          </p>
-        </div>
-        <div class="product-frame">
-          <img
-            src="assets/integrations-flow.png"
-            alt="Calendar meetings and GitHub code reviews become Snaplog worklog drafts"
-            width="1672"
-            height="941"
-          />
+      <section class="section page-width" id="integrations">
+        <p class="eyebrow">Optional, but handy</p>
+        <h2>The rest of your day counts too.</h2>
+        <div class="steps">
+          <article>
+            <span>Meetings</span>
+            <h3>Google Calendar or Outlook</h3>
+            <p>Meetings you attended become drafts on the Jira task you pick once. Read-only access.</p>
+          </article>
+          <article>
+            <span>Code reviews</span>
+            <h3>GitHub</h3>
+            <p>Reviewed pull requests become a daily review draft, sized by your active time on the PR page.</p>
+          </article>
+          <article>
+            <span>Reminder</span>
+            <h3>A red icon, not a nag</h3>
+            <p>The toolbar icon turns red when past workdays have no time in Jira. Set the threshold or turn it off.</p>
+          </article>
         </div>
       </section>
 
@@ -184,8 +186,8 @@
           <h2>Just the worklogs. None of the clutter.</h2>
         </div>
         <p>
-          No dashboards to configure. No timers to babysit. Just a calendar for drafting, editing
-          and posting time.
+          No dashboards to configure. No timers to babysit. No Snaplog server either: your Jira
+          data goes from your browser straight to Jira.
         </p>
       </section>
 
@@ -209,13 +211,6 @@
             <p>
               Jira Cloud in Chrome. Google Calendar, Outlook and GitHub are optional. Your
               organization may still restrict extensions or connected services.
-            </p>
-          </article>
-          <article>
-            <h3>Will it remind me?</h3>
-            <p>
-              Yes. The extension icon turns red when past working days this month have no Jira
-              time. Set the threshold in Settings or turn it off.
             </p>
           </article>
         </div>
