@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>COMA — Jira Worklog Extension for Chrome</title>
+    <title>Snaplog for Jira — Log Jira Time in Seconds</title>
     <meta
       name="description"
-      content="Select your days and let COMA draft Jira worklogs from task history. Review the result and post when it looks right. No Jira admin installation required."
+      content="Snaplog drafts your Jira worklogs from task history, meetings and code reviews. Review the week and post it in one click. No timers, no Jira admin installation."
     />
     <link rel="canonical" href="https://snaplog.link/" />
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="site.css?v=5" />
+    <link rel="stylesheet" href="site.css?v=9" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="COMA — Worklog for Jira" />
-    <meta property="og:description" content="Jira worklogs, without starting from scratch." />
+    <meta property="og:title" content="Snaplog for Jira" />
+    <meta property="og:description" content="Log your Jira time in seconds, not minutes." />
     <meta property="og:url" content="https://snaplog.link/" />
     <meta
       property="og:image"
-      content="https://snaplog.link/assets/suggest-poster.png"
+      content="https://snaplog.link/assets/demo-quick-overview-poster.png"
     />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "COMA — Worklog for Jira",
+        "name": "Snaplog for Jira",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Chrome",
-        "description": "Select your days and draft Jira worklogs from task history, meetings and code reviews.",
+        "description": "Draft Jira worklogs from task history, Google or Outlook meetings and GitHub code reviews, then post them in one click.",
         "url": "https://snaplog.link/",
         "downloadUrl": "https://chromewebstore.google.com/detail/hblkpeocajjnpcelneoiielajfaeojnc"
       }
@@ -34,9 +34,9 @@
   </head>
   <body>
     <header class="site-header page-width">
-      <a class="brand" href="./" aria-label="COMA home">
+      <a class="brand" href="./" aria-label="Snaplog home">
         <img src="assets/icon.svg" alt="" width="30" height="30" />
-        <span>COMA</span>
+        <span>Snaplog</span>
       </a>
       <nav aria-label="Main navigation">
         <a href="#how-it-works">How it works</a>
@@ -53,8 +53,8 @@
       <section class="hero page-width">
         <div class="hero-copy">
           <p class="eyebrow">Chrome extension for Jira Cloud</p>
-          <h1>Spend less time logging time.</h1>
-          <p class="lead">You’re already keeping track of your work in Jira.</p>
+          <h1>Log your Jira time in seconds, not minutes.</h1>
+          <p class="lead">Select the week, click Suggest, post. Snaplog drafts worklogs from what you already did in Jira.</p>
           <div class="hero-actions">
             <a
               class="button"
@@ -73,10 +73,10 @@
               muted
               playsinline
               preload="auto"
-              poster="assets/suggest-poster.png?v=2"
-              aria-label="Demo: select working days and create Jira worklog drafts"
+              poster="assets/demo-quick-overview-poster.png"
+              aria-label="Demo: select a week and Suggest fills the empty days with worklog drafts"
             >
-              <source src="assets/suggest-demo.webm?v=2" type="video/webm" />
+              <source src="assets/demo-quick-overview.mp4" type="video/mp4" />
               Your browser does not support the demo video.
             </video>
             <button class="video-toggle" type="button" aria-label="Pause demo">Pause</button>
@@ -95,13 +95,13 @@
           </article>
           <article>
             <span>02</span>
-            <h3>Let COMA suggest</h3>
-            <p>Jira status and assignment history become editable task and time drafts.</p>
+            <h3>Let Snaplog suggest</h3>
+            <p>Empty days fill with drafts from Jira status history. Days you already logged stay as they are.</p>
           </article>
           <article>
             <span>03</span>
             <h3>Review, then post</h3>
-            <p>You decide what goes to Jira.</p>
+            <p>One Submit posts the whole week. Nothing goes to Jira until you say so.</p>
           </article>
         </div>
       </section>
@@ -115,17 +115,17 @@
             across a range, or drag an entry to another day when plans change.
           </p>
         </div>
-        <div class="product-frame video-frame selection-video-frame">
+        <div class="product-frame video-frame">
           <video
             autoplay
             loop
             muted
             playsinline
             preload="metadata"
-            poster="assets/selection-poster.png?v=1"
-            aria-label="Demo: add one Jira task to separate days, then another to a selected range"
+            poster="assets/demo-multi-day-add-poster.png"
+            aria-label="Demo: select two days and add the same Jira task to both"
           >
-            <source src="assets/selection-demo.webm?v=1" type="video/webm" />
+            <source src="assets/demo-multi-day-add.mp4" type="video/mp4" />
             Your browser does not support the demo video.
           </video>
           <button class="video-toggle" type="button" aria-label="Pause demo">Pause</button>
@@ -134,34 +134,49 @@
 
       <section class="section split split-reverse page-width">
         <div class="section-copy">
-          <p class="eyebrow">At a glance</p>
-          <h2>Time on a task, without losing your place.</h2>
-          <p>Open Task time beside the calendar to see totals for any period.</p>
+          <p class="eyebrow">Edit and post</p>
+          <h2>Fix a draft, post the week.</h2>
+          <p>
+            Click any entry to change the task, time or comment. Submit sends every draft to Jira
+            at once, and posted entries get a check mark.
+          </p>
         </div>
-        <div class="product-frame detail-frame task-time-frame">
-          <img
-            src="assets/task-time.png?v=3"
-            alt="Task time summary open beside the COMA calendar"
-            width="850"
-            height="800"
-            loading="lazy"
-          />
+        <div class="product-frame video-frame">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            poster="assets/demo-edit-and-post-poster.png"
+            aria-label="Demo: edit a worklog draft and post all drafts to Jira"
+          >
+            <source src="assets/demo-edit-and-post.mp4" type="video/mp4" />
+            Your browser does not support the demo video.
+          </video>
+          <button class="video-toggle" type="button" aria-label="Pause demo">Pause</button>
         </div>
       </section>
 
-      <section class="section split split-reverse page-width">
-        <div class="section-copy">
-          <p class="eyebrow">Optional context</p>
-          <h2>Meetings and reviews can count too.</h2>
-          <p>Connect Google Calendar for meetings and GitHub for submitted reviews.</p>
-        </div>
-        <div class="product-frame">
-          <img
-            src="assets/integrations-flow.png"
-            alt="Google Calendar meetings and GitHub code reviews become COMA worklog drafts"
-            width="1672"
-            height="941"
-          />
+      <section class="section page-width" id="integrations">
+        <p class="eyebrow">Optional, but handy</p>
+        <h2>The rest of your day counts too.</h2>
+        <div class="steps">
+          <article>
+            <span>Meetings</span>
+            <h3>Google Calendar or Outlook</h3>
+            <p>Meetings you attended become drafts on the Jira task you pick once. Read-only access.</p>
+          </article>
+          <article>
+            <span>Code reviews</span>
+            <h3>GitHub</h3>
+            <p>Reviewed pull requests become a daily review draft, sized by your active time on the PR page.</p>
+          </article>
+          <article>
+            <span>Reminder</span>
+            <h3>A red icon, not a nag</h3>
+            <p>The toolbar icon turns red when past workdays have no time in Jira. Set the threshold or turn it off.</p>
+          </article>
         </div>
       </section>
 
@@ -171,8 +186,8 @@
           <h2>Just the worklogs. None of the clutter.</h2>
         </div>
         <p>
-          No dashboards to configure. No timers to babysit. Just a calendar for drafting, editing
-          and posting time.
+          No dashboards to configure. No timers to babysit. No Snaplog server either: your Jira
+          data goes from your browser straight to Jira.
         </p>
       </section>
 
@@ -181,10 +196,10 @@
         <h2>Before you install</h2>
         <div class="faq-grid">
           <article>
-            <h3>Does COMA track active time?</h3>
+            <h3>Does Snaplog track my activity?</h3>
             <p>
-              No. Jira status history helps estimate time; meetings and reviews can add more
-              context. Suggestions are estimates, not measured activity.
+              No. Suggestions are estimates from Jira status history, meetings and reviews. The only
+              timer is optional: active time on GitHub pull request pages, kept in your browser.
             </p>
           </article>
           <article>
@@ -194,8 +209,8 @@
           <article>
             <h3>What does it support?</h3>
             <p>
-              Jira Cloud in Chrome. Google Calendar and GitHub are optional. Your organization may
-              still restrict extensions or connected services.
+              Jira Cloud in Chrome. Google Calendar, Outlook and GitHub are optional. Your
+              organization may still restrict extensions or connected services.
             </p>
           </article>
         </div>
@@ -206,14 +221,16 @@
         <a
           class="button"
           href="https://chromewebstore.google.com/detail/hblkpeocajjnpcelneoiielajfaeojnc"
-          >Add COMA to Chrome</a
+          >Add Snaplog to Chrome</a
         >
       </section>
     </main>
 
     <footer class="site-footer page-width">
-      <span>COMA — Worklog for Jira</span>
+      <span>Snaplog for Jira</span>
       <div>
+        <a href="log-time-in-jira-faster/">Log time faster</a>
+        <a href="tempo-alternative/">Tempo alternative</a>
         <a href="privacy.html">Privacy</a>
         <a href="https://tally.so/r/yPBag4">Support</a>
       </div>

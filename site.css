@@ -88,7 +88,8 @@ h3 {
   gap: 10px;
   font-weight: 650;
   text-decoration: none;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .site-header nav,
@@ -103,6 +104,15 @@ h3 {
   color: var(--muted);
   font-size: 0.82rem;
   text-decoration: none;
+}
+
+.site-footer div {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.site-footer a {
+  white-space: nowrap;
 }
 
 .site-header nav > a:not(.button):hover,
@@ -192,10 +202,6 @@ h3 {
   object-fit: cover;
 }
 
-.task-time-frame {
-  aspect-ratio: 17 / 16;
-}
-
 .hero-frame {
   margin-top: clamp(42px, 5vw, 72px);
 }
@@ -213,10 +219,6 @@ h3 {
   width: 100%;
   aspect-ratio: 16 / 10;
   background: var(--soft);
-}
-
-.selection-video-frame video {
-  aspect-ratio: 53 / 36;
 }
 
 .video-toggle {
@@ -395,4 +397,70 @@ h3 {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Guide pages */
+.article {
+  max-width: 760px;
+  padding-block: clamp(56px, 9vw, 110px);
+}
+
+.article h1 {
+  font-size: clamp(2.4rem, 5.4vw, 4.2rem);
+}
+
+.article h2 {
+  margin-top: 64px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.article h3 {
+  margin-top: 28px;
+}
+
+.article p,
+.article ul,
+.article ol,
+.article table {
+  margin-top: 16px;
+}
+
+.article li + li {
+  margin-top: 8px;
+}
+
+.article .product-frame {
+  margin-top: 36px;
+}
+
+.article .button {
+  margin-top: 28px;
+}
+
+.article .updated {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.article table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.article th,
+.article td {
+  padding: 12px 14px 12px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article th {
+  font-weight: 600;
+}
+
+.table-scroll {
+  overflow-x: auto;
 }
