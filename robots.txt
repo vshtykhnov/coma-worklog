@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vshtykhnov.github.io/coma-worklog/sitemap.xml
+Sitemap: https://snaplog.link/sitemap.xml
