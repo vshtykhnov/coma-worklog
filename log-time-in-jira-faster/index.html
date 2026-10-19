@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Log Time in Jira Faster — Snaplog</title>
+    <meta
+      name="description"
+      content="Jira's Log work takes one entry at a time. Here's how to log your Jira time faster: habits, time formats, the command palette, and drafting a whole week at once."
+    />
+    <link rel="canonical" href="https://snaplog.link/log-time-in-jira-faster/" />
+    <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/site.css?v=9" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How to Log Time in Jira Faster" />
+    <meta
+      property="og:description"
+      content="One entry at a time is slow. Here's how to log a whole week of Jira time in a few clicks."
+    />
+    <meta property="og:url" content="https://snaplog.link/log-time-in-jira-faster/" />
+    <meta property="og:image" content="https://snaplog.link/assets/demo-quick-overview-poster.png" />
+  </head>
+  <body>
+    <header class="site-header page-width">
+      <a class="brand" href="/" aria-label="Snaplog home">
+        <img src="/assets/icon.svg" alt="" width="30" height="30" />
+        <span>Snaplog</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/#how-it-works">How it works</a>
+        <a href="/privacy.html">Privacy</a>
+        <a
+          class="button button-small"
+          href="https://chromewebstore.google.com/detail/hblkpeocajjnpcelneoiielajfaeojnc"
+          >Add to Chrome</a
+        >
+      </nav>
+    </header>
+
+    <main class="article page-width">
+      <p class="eyebrow">Guide</p>
+      <h1>How to log time in Jira faster</h1>
+      <p class="lead">
+        Jira logs time one entry at a time. That's fine for a single task and slow for a whole
+        week. These are the ways to cut it down, from small habits to drafting the week at once.
+      </p>
+
+      <h2>The built-in way: Log work</h2>
+      <p>In Jira Cloud, time goes on each work item separately:</p>
+      <ol>
+        <li>Open the work item.</li>
+        <li>Select <strong>More actions (•••) → Log work</strong>, or click the Time tracking field.</li>
+        <li>Enter the time spent, the date, an optional comment, and save.</li>
+      </ol>
+      <p>
+        If you don't see Time tracking, it is switched off for your space. Only a Jira admin can
+        turn it on, and you need the Work on work items permission to log time.
+      </p>
+      <p>Three things make this slow when you log after the fact:</p>
+      <ul>
+        <li>One work item and one entry per dialog, so a week of work means a dozen dialogs.</li>
+        <li>You have to remember what you worked on and for how long, task by task.</li>
+        <li>
+          Jira has no built-in weekly view for entering time. Timesheets usually come from a
+          Marketplace app your admin installs.
+        </li>
+      </ul>
+
+      <h2>Make the native flow quicker</h2>
+      <h3>Type time the way Jira reads it</h3>
+      <p>
+        Jira accepts <code>1h 30m</code>, <code>45m</code> or <code>1d</code>. A day and a week
+        mean however many hours your admin set as a working day and week, so check before you
+        type <code>1d</code>.
+      </p>
+      <h3>Open Log work from the keyboard</h3>
+      <p>
+        Press <strong>Ctrl + K</strong> (<strong>Cmd + K</strong> on Mac) on a work item to open
+        Jira's command palette, then search for Log work.
+      </p>
+      <h3>Log daily, not monthly</h3>
+      <p>
+        The slow part is reconstructing what you did. Two minutes at the end of each day beats an
+        hour of guessing at the end of the month.
+      </p>
+
+      <h2>Draft the whole week at once</h2>
+      <p>
+        Your Jira history already knows most of the answer: which tasks you moved to In Progress,
+        how long they stayed there and who they were assigned to.
+        <a href="/">Snaplog</a> is a Chrome extension that turns that history into worklog drafts
+        in a calendar:
+      </p>
+      <ol>
+        <li>Select the days you need, a single day or a full week.</li>
+        <li>Click <strong>Suggest worklogs</strong>. Empty days fill with drafts; days you already logged stay as they are.</li>
+        <li>Fix anything that looks off, then <strong>Submit</strong> posts every draft to Jira.</li>
+      </ol>
+      <div class="product-frame video-frame">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          poster="/assets/demo-quick-overview-poster.png"
+          aria-label="Demo: select a week, Suggest fills the empty days with worklog drafts"
+        >
+          <source src="/assets/demo-quick-overview.mp4" type="video/mp4" />
+          Your browser does not support the demo video.
+        </video>
+        <button class="video-toggle" type="button" aria-label="Pause demo">Pause</button>
+      </div>
+      <p>
+        The entries are ordinary Jira worklogs, the same as Log work creates, so Jira's own
+        reports see them. Connecting Google Calendar or Outlook adds meetings, and GitHub adds
+        code reviews.
+      </p>
+
+      <h2>When this isn't the right fit</h2>
+      <ul>
+        <li>Snaplog works with Jira Cloud in Chrome; Jira Data Center isn't supported.</li>
+        <li>Suggestions are estimates from status history, not measured time. Review them before you submit.</li>
+        <li>Some companies block browser extensions or require approved time-tracking apps.</li>
+        <li>
+          If your team needs timesheet approvals or billing reports, a full timesheet app fits
+          better. See <a href="/tempo-alternative/">how Snaplog compares with Tempo</a>.
+        </li>
+      </ul>
+
+      <a
+        class="button"
+        href="https://chromewebstore.google.com/detail/hblkpeocajjnpcelneoiielajfaeojnc"
+        >Add Snaplog to Chrome</a
+      >
+    </main>
+
+    <footer class="site-footer page-width">
+      <span>Snaplog for Jira</span>
+      <div>
+        <a href="/log-time-in-jira-faster/">Log time faster</a>
+        <a href="/tempo-alternative/">Tempo alternative</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="https://tally.so/r/yPBag4">Support</a>
+      </div>
+    </footer>
+    <script>
+      for (const frame of document.querySelectorAll('.video-frame')) {
+        const video = frame.querySelector('video');
+        const button = frame.querySelector('.video-toggle');
+        const update = () => {
+          button.textContent = video.paused ? 'Play' : 'Pause';
+          button.setAttribute('aria-label', `${video.paused ? 'Play' : 'Pause'} demo`);
+        };
+        button.addEventListener('click', () => (video.paused ? video.play() : video.pause()));
+        video.addEventListener('play', update);
+        video.addEventListener('pause', update);
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) video.pause();
+        update();
+      }
+    </script>
+  </body>
+</html>
